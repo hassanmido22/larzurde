@@ -1,0 +1,353 @@
+html,body
+{
+    height: 100%;
+    direction: rtl;
+}
+
+
+p,button,h3,h4
+{
+    outline: none;
+}
+/* start top nav */ 
+
+.navbar-top
+{
+    padding: 10px 0;
+    position: fixed;
+    background-color: rgba(255, 255, 255, 0.9);
+    width: 100%;
+    z-index: 2; 
+}
+
+.right-button-show
+,.right-button-show:hover
+,.right-button-show:focus
+{
+    color: black;
+    font-size: 25px;
+    right: 0;
+    margin: 5px 20px;
+    position: absolute;
+    text-decoration: none;
+    display: none;
+    cursor: pointer;
+}
+
+#left-login 
+{
+    color: #ba8c56;
+    margin: 0px 30px;
+    text-decoration: none;
+    cursor: pointer;
+    font-family: 'Cairo', sans-serif;
+    font-weight: 500;
+    float: left;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+/* end top navbar  */
+
+/* start slide navbar */
+
+.sidenav {
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    z-index: 2;
+    background:url("../img/BGpattern.png")center center no-repeat;
+    background-size:cover;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    right: 0;
+    top: 0;
+    overflow-x: hidden;
+
+}
+
+.sidenav a {
+    text-decoration: none;
+    color: white;
+    display: block;
+    text-align: center;
+    margin: 30px 0;
+    font-weight: 400;
+    font-family: 'Cairo', sans-serif;
+    transition: 0.2s;
+
+}
+
+.sidenav .active a
+{
+    
+    color: #ba8c56;
+}
+
+.sidenav #top-li
+{
+    margin: 0px 10px 90px 10px;
+    display: block;
+}
+
+.sidenav #top-li #right-button-hide
+{
+    font-size: 25px;
+    color: white;
+    text-align: right;
+    display: inline;
+    position: absolute;
+    right: 20px;
+    margin-top: 10px;
+    cursor: pointer;
+    
+}
+
+.sidenav #top-li #company-name
+{
+    margin: 15px auto;
+    font-size: 25px;
+    color: white;
+    display: inline;
+    position: absolute;
+    right: 0;
+    left: 0;
+    font-weight: 600;
+    cursor: pointer;
+    margin: 8px auto;   
+}
+
+.sidenav #jewelery
+{
+    color: white;
+    margin-bottom: 80px;
+    font-weight: bold;
+
+}
+
+/* full width of sidenav in mobiles and tablets */
+
+@media (max-width:800px)
+{
+    .sidenav
+    {
+        width: 100%;
+    }
+}
+
+/* end slide navbar */
+
+/* start gallery-page */
+
+.gallery-page
+{
+    background-color: #ebeff2;
+    transition: 0.5s ;
+    padding-right: 270px;
+    padding-bottom: 50px;
+    padding-top: 73px;
+    position: relative;
+}
+
+@media(max-width:800px)
+{
+    .gallery-page
+    {
+        padding-right: 0;
+    }
+    
+}
+
+
+/* end gallery-page */
+
+/* start row */
+
+.gallery-page .row
+{
+    padding-right: 20px;
+    margin-left: 0;
+
+}
+
+@media (max-width:800px)
+{
+    .gallery-page .row 
+    {
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+}
+
+/* end row */
+
+/* start gallery-item */
+
+
+.gallery-page .gallery-item
+{
+    background-color: rgba(255, 255, 255, 0.56);
+    padding: 20px 20px 20px 0px;
+    float: right;
+    margin: 0.5%;
+    
+    
+}
+
+.gallery-page .gallery-item .custom-file
+{
+    position: relative;
+    text-align: center;
+    z-index: 1;
+    border:1px solid #cbcbcc;
+    border-radius: 4px;
+}
+
+.gallery-page .custom-file:after {
+    
+    content: "";
+    display: block;
+    padding-bottom: 100%;
+  }
+
+.gallery-page .gallery-item .custom-file input[type="file"]
+{
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    position: absolute;
+    z-index: 2;
+    
+}
+
+.gallery-item .custom-file .caption
+{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 40%;
+}
+
+.gallery-item  .custom-file .caption p
+{
+    color: #8a8888;
+    font-family: 'Cairo', sans-serif;
+    font-weight: 300;
+
+}
+
+.gallery-item  .custom-file .caption i
+{
+    color: #817e7a;
+    font-size: 15px;
+    
+}
+
+.gallery-page .gallery-item .right
+{
+    float: right;
+    padding: 0;
+}
+
+.gallery-page .gallery-item .left
+{
+    float: left;
+    text-align: right;
+    padding: 0;
+    
+}
+
+
+@media (min-width:1170px){
+.gallery-item
+{
+        
+    width: 32%;
+}
+    
+}
+@media (max-width:1170px) and (min-width:992px) {
+.gallery-item
+{
+    width: 49%;
+}
+}
+@media (max-width:991px) and (min-width:767px){
+.gallery-item
+{
+    width: 49%;
+}
+}
+
+
+
+/* start left description */
+
+.gallery-item .left .product-name
+{
+    color: #747474;
+    font-family: 'Cairo', sans-serif;
+    font-weight: bolder;
+    font-size: 16px;
+    padding: 0 15px;
+}
+
+.gallery-item .left .description
+{
+    color: #8e8e8e;
+    font-family: 'Cairo', sans-serif;
+    font-size: 15px;
+    float: right;
+    margin: 10% 0;
+}
+
+.gallery-item .left .description button
+{
+    background-color: #bd9261;
+    border: none;
+    border-radius: 4px;
+}
+
+.gallery-item .left .description button a
+{
+    color: #ebeff2;
+    font-family: 'Cairo', sans-serif;
+    font-size: 8px;
+    text-decoration: none;
+}
+
+
+/* end left description */
+
+/* start value */
+
+.gallery-item .left .value
+{
+    color: #747474;
+    font-family: 'Cairo', sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    float: right;
+    padding: 0;
+    margin: 10% 0;
+}
+
+
+.gallery-item .left .value button
+{
+    background-color: #c62127;
+    border: none;
+    border-radius: 4px;
+}
+
+.gallery-item .left .value button a
+{
+    color: #ebeff2;
+    font-family: 'Cairo', sans-serif;
+    font-size: 8px;
+    text-decoration: none;
+}
+
+/* end value */
+
+/* start gallery-item */

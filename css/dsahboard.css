@@ -1,0 +1,300 @@
+html,body
+{
+        height: 100%;
+    direction: rtl;
+}
+
+
+p,button,h3,h4
+{
+    outline: none;
+}
+/* start top nav */ 
+
+.navbar-top
+{
+    padding: 10px 0;
+    position: fixed;
+    background-color: rgba(255, 255, 255, 0.9);
+    width: 100%;
+    z-index: 2; 
+}
+
+.right-button-show
+,.right-button-show:hover
+,.right-button-show:focus
+{
+    color: black;
+    font-size: 25px;
+    right: 0;
+    margin: 5px 20px;
+    position: absolute;
+    text-decoration: none;
+    display: none;
+    cursor: pointer;
+}
+
+#left-login 
+{
+    color: #ba8c56;
+    margin: 0px 30px;
+    text-decoration: none;
+    cursor: pointer;
+    font-family: 'Cairo', sans-serif;
+    font-weight: 500;
+    float: left;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+/* end top navbar  */
+
+/* start slide navbar */
+
+.sidenav {
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    z-index: 2;
+    background:url("../img/BGpattern.png")center center no-repeat;
+    background-size:cover;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    right: 0;
+    top: 0;
+    overflow-x: hidden;
+
+}
+
+.sidenav a {
+    text-decoration: none;
+    color: white;
+    display: block;
+    text-align: center;
+    margin: 30px 0;
+    font-weight: 400;
+    font-family: 'Cairo', sans-serif;
+    transition: 0.2s;
+
+}
+
+.sidenav .active a
+{
+    
+    color: #ba8c56;
+}
+
+.sidenav #top-li
+{
+    margin: 0px 10px 90px 10px;
+    display: block;
+}
+
+.sidenav #top-li #right-button-hide
+{
+    font-size: 25px;
+    color: white;
+    text-align: right;
+    display: inline;
+    position: absolute;
+    right: 20px;
+    margin-top: 10px;
+    cursor: pointer;
+    
+}
+
+.sidenav #top-li #company-name
+{
+    margin: 15px auto;
+    font-size: 25px;
+    color: white;
+    display: inline;
+    position: absolute;
+    right: 0;
+    left: 0;
+    font-weight: 600;
+    cursor: pointer;
+    margin: 8px auto;   
+}
+
+.sidenav #jewelery
+{
+    color: white;
+    margin-bottom: 80px;
+    font-weight: bold;
+
+}
+
+/* full width of sidenav in mobiles and tablets */
+
+@media (max-width:800px)
+{
+    .sidenav
+    {
+        width: 100%;
+    }
+}
+
+/* end slide navbar */
+
+/* start page */
+
+.page
+{
+    background-color: #ebeff2;
+    transition: 0.5s ;
+    padding-right: 270px;
+    padding-bottom: 50px;
+    padding-top: 73px;
+    position: relative;
+   
+}
+
+@media(max-width:800px)
+{
+    .page
+    {
+        padding-right: 0;
+    }
+    
+}
+
+
+.page .row
+{
+    margin: 0 0;
+}
+
+.page .row div
+{
+   
+}
+
+/* end page */
+
+
+/* start centered logo */
+
+.page .logo
+{
+    width: fit-content;
+    margin: 20px auto;
+}
+
+.page .logo img
+{
+    width:200px;
+}
+
+
+/* end centered logo */
+
+/* start small items */
+
+
+
+.circle-text {
+    width: 60%;
+    margin: 20px auto;
+    overflow: hidden;
+    position: relative;
+}
+
+
+.circle-text:after {
+    content: "";
+    display: block;
+    width: 100%;
+    height:0;
+    padding-bottom: 100%; 
+    -moz-border-radius: 50%; 
+    -webkit-border-radius: 50%; 
+    border-radius: 50%;
+    border: 1px solid #bd9261;
+}
+.circle-text div {
+    float:left;
+    width:100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    line-height:1em;
+    margin-top:-0.5em;
+    text-align:center;
+    color:white;
+}
+
+
+.circle-text div img
+{
+    width: 35px;
+}
+
+
+.circle-text div h1
+{
+    color: #bd9261;
+    font-weight: bolder;
+    font-size: 70px;
+    margin: 5px 0;
+}
+
+.rosegold div h1
+
+{
+    font-size: 40px;
+    font-family: 'Cairo', sans-serif;
+    margin: 10px 0;
+}
+
+.circle-text div h4
+{
+    color: #4a4949;
+    font-weight: bolder;
+    font-family: 'Cairo', sans-serif;
+    margin: 5px 0;
+    
+    
+}
+
+
+
+/* end small items */
+
+/* start big item */
+
+
+
+.page .big-icon 
+{
+    margin: 10% auto;
+}
+
+/* end big item */
+
+
+/* start medium screen */
+
+@media(max-width:1170px) and (min-width:991px)
+{
+.circle-text {
+    width: 80%;
+}
+}
+
+
+@media(max-width:991px)
+{
+.page .big-icon 
+{
+    margin: -60px auto;
+}
+.circle-text 
+    
+{
+    margin: 60px auto;
+}
+   
+}
+/* end medium screen */
